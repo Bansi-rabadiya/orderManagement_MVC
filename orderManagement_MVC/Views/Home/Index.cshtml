@@ -1,0 +1,19 @@
+﻿@model orderManagement_MVC.Models.Order
+    @{
+        ViewBag.Title = "Home Page";
+    }
+<br />
+<br />
+
+
+@Model.OrderId
+<br />
+@Model.OrderName
+<br />
+@Model.OrderDate.ToString("ddMMMyyyy"); 
+<br/>
+@Model.TotalAmount().ToString("C")
+
+<div>
+    this is my home page
+</div>
